@@ -5,18 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC - Landing Page</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <header class="">
-        this is header
+    <header id="header">
+        <nav id="nav-bar" class="container">
+            <a href="#" class="site-logo">
+                <img src="./images/logo.svg" alt="" class="" id="header-img">
+            </a>
+
+            <div class="site-menu">
+                <button class="site-menu-toggle menu-closed">
+                    <img src="./images/icon-hamburger.svg" id="open-menu" alt="Menu button">
+                    <img src="./images/icon-close.svg" id="close-menu" alt="Close menu button">
+                    
+                </button>
+                <ul class="nav-links">
+                    <li class="">
+                        <a href="" class="nav-link">link1</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="nav-link">link1</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="nav-link">link1</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="nav-link">link1</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+
+        <div class="site-intro container">
+            <div class="site-intro-text">
+                <h1 class="">
+                    Immersive Experiences that deliver
+                </h1>
+            </div>
+        </div>
     </header>
 
     <main class="">
-        main body is here
+        <section class="site-feature">
+            <div class="site-feature-img">
+                <img src="./images/mobile/image-interactive.jpg" alt="Immersive experiences" class="">
+            </div>
+            <div class="site-feature-text">
+                <h2 class="">The leader in interactive vr</h2>
+                <p class="">Founded in 2011, Loopstudios has been world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+            </div>
+        </section>
+
+        <!-- creations -->
+        <section class="site-creations">
+            <h2 class="">Our Creations</h2>
+            <div class="site-creation-card">
+                <img src="./images/mobile/image-deep-earth.jpg" alt="deep earth" class="">
+                <h3 class="">Deep <br> earth</h3>
+            </div>
+            <div class="site-creation-card">
+                <img src="./images/mobile/image-night-arcade.jpg" alt="deep earth" class="">
+                <h3 class="">Night <br> Arcade</h3>
+            </div>
+            <div class="site-creation-card">
+                <img src="./images/mobile/image-soccer-team.jpg" alt="deep earth" class="">
+                <h3 class="">Soccer <br> Team VR</h3>
+            </div>
+            <div class="site-creation-card">
+                <img src="./images/mobile/image-grid.jpg" alt="deep earth" class="">
+                <h3 class="">The <br> Grid</h3>
+            </div>
+            <div class="site-creation-card">
+                <img src="./images/mobile/image-from-above.jpg" alt="deep earth" class="">
+                <h3 class="">From up <br> above vr</h3>
+            </div>
+            <div class="site-creation-card">
+                <img src="./images/mobile/image-pocket-borealis.jpg" alt="deep earth" class="">
+                <h3 class="">Pocket <br> Borealis</h3>
+            </div>
+            <div class="site-creation-card">
+                <img src="./images/mobile/image-curiosity.jpg" alt="deep earth" class="">
+                <h3 class="">The <br> Curiosity</h3>
+            </div>
+            <div class="site-creation-card">
+                <img src="./images/mobile/image-fisheye.jpg" alt="deep earth" class="">
+                <h3 class="">Make it <br> FishEye</h3>
+            </div>
+
+            <!-- button -->
+            <button class="btn-seeMore">
+                See all
+            </button>
+        </section>
+
+
+
     </main>
 
-    <footer class="">
-        footer is here
+    <footer class="" id="footer">
+        <div class="footer-left-section">
+            <div class="footer-logo">
+                <img src="./images/logo.svg" alt="Logo" class="">
+            </div>
+            <ul class="footer-links">
+                <li class=""><a href="#" class="">About</a></li>
+                <li class=""><a href="#" class="">Careers</a></li>
+                <li class=""><a href="#" class="">Events</a></li>
+                <li class=""><a href="#" class="">Products</a></li>
+                <li class=""><a href="#" class="">Support</a></li>
+            </ul>
+        </div>
+
+        <div class="">
+            <ul class="footer-socials list-inline">
+                <li class="">
+                    <a href="#" class="">
+                        <img src="./images/icon-facebook.svg" alt="" class="">
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="">
+                        <img src="./images/icon-twitter.svg" alt="" class="">
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="">
+                        <img src="./images/icon-pinterest.svg" alt="" class="">
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="">
+                        <img src="./images/icon-instagram.svg" alt="" class="">
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="footer-copyright">
+                &copy; 2021 LoopStudios. All rights reserved.
+            </div>
+        </div>
+
     </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
