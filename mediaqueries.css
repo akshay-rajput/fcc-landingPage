@@ -4,3 +4,68 @@
         font-size: 10px;
     }
 }
+
+/* landscape mobile to tablet */
+@media (min-width: 451px) and (max-width: 920px){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 920px){
+    /* position absolute if mobile menu opened */
+    .site-logo.absolute-logo{
+        z-index: 10;
+        position: absolute;
+    }
+    #nav-bar .site-menu-toggle{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all ease 0.5s;
+    }
+    #nav-bar .nav-links{
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+        text-align: left;
+        padding-left: 20px;
+        margin-bottom: 24px;
+        font-size: 1.5rem;
+    }
+    #nav-bar .nav-links-wrapper{
+        height: 100%;
+        width: 0;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0, 1); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+
+
+    #nav-bar .nav-links{
+        display: block;
+        transition: translate ease 0.5s;
+    }
+    /* toggle button */
+    #nav-bar .menu-open{
+        z-index: 10;
+        position: absolute;
+        right: 20px;
+    }
+    #nav-bar .menu-closed #close-menu,
+    #nav-bar .menu-open #open-menu{
+        display: none;
+    }
+}
+
+@media(min-width: 921px){
+    .site-menu-toggle{
+        display: none;
+    }
+}

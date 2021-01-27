@@ -56,20 +56,12 @@ ul li{
 #nav-bar{
     display: flex;
     justify-content: space-between;
-}
-#nav-bar .site-menu-toggle{
-    background-color: transparent;
-    border: none;
-}
-#nav-bar .nav-links{
-    display: none;
-}
-#nav-bar .menu-closed #close-menu,
-#nav-bar .menu-open #open-menu{
-    display: none;
+    align-items: center;
 }
 
 
+
+/*  */
 .site-intro{
     display: flex;
     flex-direction: column;

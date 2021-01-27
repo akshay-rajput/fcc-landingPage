@@ -10,9 +10,11 @@
 <body>
     <header id="header">
         <nav id="nav-bar" class="container">
-            <a href="#" class="site-logo">
-                <img src="./images/logo.svg" alt="" class="" id="header-img">
-            </a>
+            <div class="site-brand">
+                <a href="#" class="site-logo">
+                    <img src="./images/logo.svg" alt="" class="" id="header-img">
+                </a>
+            </div>
 
             <div class="site-menu">
                 <button class="site-menu-toggle menu-closed">
@@ -20,20 +22,25 @@
                     <img src="./images/icon-close.svg" id="close-menu" alt="Close menu button">
                     
                 </button>
-                <ul class="nav-links">
-                    <li class="">
-                        <a href="" class="nav-link">link1</a>
-                    </li>
-                    <li class="">
-                        <a href="" class="nav-link">link1</a>
-                    </li>
-                    <li class="">
-                        <a href="" class="nav-link">link1</a>
-                    </li>
-                    <li class="">
-                        <a href="" class="nav-link">link1</a>
-                    </li>
-                </ul>
+                <div class="nav-links-wrapper">
+                    <ul class="nav-links">
+                        <li class="">
+                            <a href="" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="">
+                            <a href="" class="nav-link">CAREERS</a>
+                        </li>
+                        <li class="">
+                            <a href="" class="nav-link">EVENTS</a>
+                        </li>
+                        <li class="">
+                            <a href="" class="nav-link">PRODUCTS</a>
+                        </li>
+                        <li class="">
+                            <a href="" class="nav-link">SUPPORT</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
         </nav>
@@ -100,8 +107,6 @@
             </button>
         </section>
 
-
-
     </main>
 
     <footer class="" id="footer">
@@ -149,6 +154,51 @@
 
     </footer>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+    <script>
+        var menuButton = document.querySelector('.site-menu-toggle');
+        
+        function menuClickHandle(){
+            if(menuButton.classList.contains('menu-closed')){
+                // toggle menu icon
+                menuButton.classList.remove('menu-closed')
+                menuButton.classList.add('menu-open');
+
+                // increase width of menu
+                document.querySelector(".nav-links-wrapper").style.width = "100%";
+
+                // make navbar absolute to appear above overlay
+                document.querySelector('.site-logo').classList.add('absolute-logo');
+                
+                // enable scroll of body
+                document.querySelector("body").style.overflow = "hidden";
+            }
+            else{
+                // close the menu
+                /* Close when someone clicks on the "x" symbol inside the overlay */
+                document.querySelector(".nav-links-wrapper").style.width = "0%";
+                
+                menuButton.classList.remove('menu-open')
+                menuButton.classList.add('menu-closed');
+
+                // make navbar absolute to appear above overlay
+                document.querySelector('.site-logo').classList.remove('absolute-logo');
+                
+                // enable scroll of body
+                document.querySelector("body").style.overflow = "auto"; 
+            }
+
+            /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+
+
+            console.log("menu status: ", menuButton.classList);
+        }
+        menuButton.addEventListener('click', menuClickHandle)
+    </script>
 </body>
 </html>
