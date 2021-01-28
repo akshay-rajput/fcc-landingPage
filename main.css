@@ -17,7 +17,10 @@ header{
     background-image: url('./images/mobile/image-hero.jpg');
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
 }
 
 main{
@@ -60,6 +63,7 @@ ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 /*  */
@@ -67,8 +71,11 @@ ul li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    /* align-items: center; */
+    /* height: 100%; */
     color: white;
+    width: 100%;
+    flex-grow: 1;
 }
 .site-intro-text{
     max-width: 500px;
