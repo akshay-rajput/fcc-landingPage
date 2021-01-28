@@ -7,7 +7,11 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Alata', sans-serif;
     /* background-color: #333; */
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Josefin Sans', sans-serif;
 }
 header{
     background-image: url('./images/mobile/image-hero.jpg');
@@ -58,8 +62,6 @@ ul li{
     align-items: center;
 }
 
-
-
 /*  */
 .site-intro{
     display: flex;
@@ -73,7 +75,7 @@ ul li{
 }
 .site-intro-text h1{
     padding: 1rem;
-    font-size: 2.75rem;
+    font-size: 3.75rem;
     letter-spacing: 1px;
     word-wrap: break-word;
     border: 1px solid white;
