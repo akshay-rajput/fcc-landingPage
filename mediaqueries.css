@@ -1,7 +1,22 @@
 /* mobile */
 @media (max-width: 450px){
     html{
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .site-creations-grid{
+        grid-template-columns: 1fr;
+    }
+    .site-feature{
+        grid-template-columns: 1fr;
+    }
+    .site-feature-text{
+        position: relative;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        bottom: auto;
+        right: auto;
+        padding: 1rem;
     }
 }
 
@@ -9,6 +24,9 @@
 @media (min-width: 451px) and (max-width: 920px){
     html{
         font-size: 16px;
+    }
+    .site-creations-grid{
+        grid-template-columns: 1fr;
     }
 }
 
@@ -62,10 +80,46 @@
     #nav-bar .menu-open #open-menu{
         display: none;
     }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    .site-creations-heading{
+        justify-content: center;
+    }
+
+    #footer .container{
+        flex-direction: column;
+    }
+    #footer .footer-right-section,
+    #footer .footer-left-section{
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    #footer .footer-links{
+        margin-top: 2rem;
+    }
+    #footer .footer-socials{
+        margin-top: 1.5rem;
+    }
 }
 
 @media(min-width: 921px){
+    header{
+        background-image: url('./images/desktop/image-hero.jpg');
+        background-size: cover;
+        background-position: center;
+        /* height: 800px; */
+    }
     .site-menu-toggle{
+        display: none;
+    }
+    .nav-links{
+        display: inline-flex;
+    }
+
+    .hide-desktop{
         display: none;
     }
 }

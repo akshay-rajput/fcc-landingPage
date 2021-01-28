@@ -57,7 +57,11 @@
     <main class="">
         <section class="site-feature">
             <div class="site-feature-img">
-                <img src="./images/mobile/image-interactive.jpg" alt="Immersive experiences" class="">
+                <img srcset="./images/mobile/image-interactive.jpg 654w,
+                            ./images/desktop/image-interactive.jpg 731w"
+                    sizes="(max-width: 700px) 654px,
+                        731px"
+                    alt="Immersive experiences" class="">
             </div>
             <div class="site-feature-text">
                 <h2 class="">The leader in interactive vr</h2>
@@ -67,42 +71,75 @@
 
         <!-- creations -->
         <section class="site-creations">
-            <h2 class="">Our Creations</h2>
-            <div class="site-creation-card">
-                <img src="./images/mobile/image-deep-earth.jpg" alt="deep earth" class="">
-                <h3 class="">Deep <br> earth</h3>
+            <div class="site-creations-heading">
+                <h2 class="">Our Creations</h2>
+                <!-- button -->
+                <button class="btn-seeMore hide-mobile">
+                    See all
+                </button>
             </div>
-            <div class="site-creation-card">
-                <img src="./images/mobile/image-night-arcade.jpg" alt="deep earth" class="">
-                <h3 class="">Night <br> Arcade</h3>
-            </div>
-            <div class="site-creation-card">
-                <img src="./images/mobile/image-soccer-team.jpg" alt="deep earth" class="">
-                <h3 class="">Soccer <br> Team VR</h3>
-            </div>
-            <div class="site-creation-card">
-                <img src="./images/mobile/image-grid.jpg" alt="deep earth" class="">
-                <h3 class="">The <br> Grid</h3>
-            </div>
-            <div class="site-creation-card">
-                <img src="./images/mobile/image-from-above.jpg" alt="deep earth" class="">
-                <h3 class="">From up <br> above vr</h3>
-            </div>
-            <div class="site-creation-card">
-                <img src="./images/mobile/image-pocket-borealis.jpg" alt="deep earth" class="">
-                <h3 class="">Pocket <br> Borealis</h3>
-            </div>
-            <div class="site-creation-card">
-                <img src="./images/mobile/image-curiosity.jpg" alt="deep earth" class="">
-                <h3 class="">The <br> Curiosity</h3>
-            </div>
-            <div class="site-creation-card">
-                <img src="./images/mobile/image-fisheye.jpg" alt="deep earth" class="">
-                <h3 class="">Make it <br> FishEye</h3>
+            <div class="site-creations-grid">
+                <div class="site-creation-card">
+                    <img srcset="./images/mobile/image-deep-earth.jpg 654w,
+                                ./images/desktop/image-deep-earth.jpg 256w"
+                        sizes="(max-width: 700px) 654px,
+                            256px" alt="deep earth" class="">
+                    <h3 class="">Deep <br> earth</h3>
+                </div>
+                <div class="site-creation-card">
+                    <img srcset="./images/mobile/image-night-arcade.jpg 654w,
+                                ./images/desktop/image-night-arcade.jpg 256w"
+                        sizes="(max-width: 700px) 654px,
+                            256px" 
+                     alt="deep earth" class="">
+                    <h3 class="">Night <br> Arcade</h3>
+                </div>
+                <div class="site-creation-card">
+                    <img srcset="./images/mobile/image-soccer-team.jpg 654w,
+                                ./images/desktop/image-soccer-team.jpg 256w"
+                        sizes="(max-width: 700px) 654px,
+                            256px" alt="deep earth" class="">
+                    <h3 class="">Soccer <br> Team VR</h3>
+                </div>
+                <div class="site-creation-card">
+                    <img srcset="./images/mobile/image-grid.jpg 654w,
+                                ./images/desktop/image-grid.jpg 256w"
+                        sizes="(max-width: 700px) 654px,
+                            256px"  alt="deep earth" class="">
+                    <h3 class="">The <br> Grid</h3>
+                </div>
+                <div class="site-creation-card">
+                    <img srcset="./images/mobile/image-from-above.jpg 654w,
+                                ./images/desktop/image-from-above.jpg 256w"
+                        sizes="(max-width: 700px) 654px,
+                            256px" alt="deep earth" class="">
+                    <h3 class="">From up <br> above vr</h3>
+                </div>
+                <div class="site-creation-card">
+                    <img srcset="./images/mobile/image-pocket-borealis.jpg 654w,
+                                ./images/desktop/image-pocket-borealis.jpg 256w"
+                        sizes="(max-width: 700px) 654px,
+                            256px" alt="deep earth" class="">
+                    <h3 class="">Pocket <br> Borealis</h3>
+                </div>
+                <div class="site-creation-card">
+                    <img srcset="./images/mobile/image-curiosity.jpg 654w,
+                                ./images/desktop/image-curiosity.jpg 256w"
+                        sizes="(max-width: 700px) 654px,
+                            256px" alt="deep earth" class="">
+                    <h3 class="">The <br> Curiosity</h3>
+                </div>
+                <div class="site-creation-card">
+                    <img srcset="./images/mobile/image-fisheye.jpg 654w,
+                                ./images/desktop/image-fisheye.jpg 256w"
+                        sizes="(max-width: 700px) 654px,
+                            256px" alt="deep earth" class="">
+                    <h3 class="">Make it <br> FishEye</h3>
+                </div>
             </div>
 
             <!-- button -->
-            <button class="btn-seeMore">
+            <button class="btn-seeMore hide-desktop">
                 See all
             </button>
         </section>
@@ -110,45 +147,47 @@
     </main>
 
     <footer class="" id="footer">
-        <div class="footer-left-section">
-            <div class="footer-logo">
-                <img src="./images/logo.svg" alt="Logo" class="">
+        <div class="container">
+            <div class="footer-left-section">
+                <div class="footer-logo">
+                    <img src="./images/logo.svg" alt="Logo" class="">
+                </div>
+                <ul class="footer-links">
+                    <li class=""><a href="#" class="">About</a></li>
+                    <li class=""><a href="#" class="">Careers</a></li>
+                    <li class=""><a href="#" class="">Events</a></li>
+                    <li class=""><a href="#" class="">Products</a></li>
+                    <li class=""><a href="#" class="">Support</a></li>
+                </ul>
             </div>
-            <ul class="footer-links">
-                <li class=""><a href="#" class="">About</a></li>
-                <li class=""><a href="#" class="">Careers</a></li>
-                <li class=""><a href="#" class="">Events</a></li>
-                <li class=""><a href="#" class="">Products</a></li>
-                <li class=""><a href="#" class="">Support</a></li>
-            </ul>
-        </div>
-
-        <div class="">
-            <ul class="footer-socials list-inline">
-                <li class="">
-                    <a href="#" class="">
-                        <img src="./images/icon-facebook.svg" alt="" class="">
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#" class="">
-                        <img src="./images/icon-twitter.svg" alt="" class="">
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#" class="">
-                        <img src="./images/icon-pinterest.svg" alt="" class="">
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#" class="">
-                        <img src="./images/icon-instagram.svg" alt="" class="">
-                    </a>
-                </li>
-            </ul>
-            
-            <div class="footer-copyright">
-                &copy; 2021 LoopStudios. All rights reserved.
+    
+            <div class="footer-right-section">
+                <ul class="footer-socials list-inline">
+                    <li class="">
+                        <a href="#" class="">
+                            <img src="./images/icon-facebook.svg" alt="" class="">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="">
+                            <img src="./images/icon-twitter.svg" alt="" class="">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="">
+                            <img src="./images/icon-pinterest.svg" alt="" class="">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="">
+                            <img src="./images/icon-instagram.svg" alt="" class="">
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="footer-copyright">
+                    &copy; 2021 LoopStudios. All rights reserved.
+                </div>
             </div>
         </div>
 
