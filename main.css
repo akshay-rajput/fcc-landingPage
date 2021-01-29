@@ -14,14 +14,12 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Josefin Sans', sans-serif;
 }
 header{
-    background-image: url('./images/mobile/image-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    position: fixed;
+    width: 100%;
+    background-color: rgba(11,11, 11, 0.35);
+    z-index: 1;
 }
+
 
 main{
     flex-grow: 1;
@@ -55,9 +53,8 @@ ul li{
 }
 
 #nav-bar, .site-intro{
-    margin-top: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 #nav-bar{
     display: flex;
@@ -67,15 +64,23 @@ ul li{
 }
 
 /*  */
+
 .site-intro{
+    background-image: url('./images/mobile/image-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* height: 100%; */
+    align-items: flex-start;
     color: white;
     width: 100%;
     flex-grow: 1;
+}
+.site-intro .container{
+    /* margin-left: 0; */
+    width: 100%;
 }
 .site-intro-text{
     max-width: 500px;
@@ -193,6 +198,28 @@ ul li{
     background-color: black;
 }
 
+/* site-video */
+.site-video, .site-subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.site-video h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.site-subscribe .email-subscribe{
+    font-size: 1.5rem;
+    padding: 0.4rem;
+}
+.site-subscribe .btn-subscribe{
+    padding: 0.4rem 1rem;
+    font-size: 1.5rem;
+}
 /* ------ footer -------- */
 footer#footer{
     text-align: center;

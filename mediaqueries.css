@@ -106,7 +106,7 @@
 }
 
 @media(min-width: 921px){
-    header{
+    .site-intro{
         background-image: url('./images/desktop/image-hero.jpg');
         background-size: cover;
         background-position: center;
